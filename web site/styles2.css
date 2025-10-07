@@ -1,0 +1,206 @@
+/* ===== Global Styles ===== */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --light-bg: #ffffff;
+    --light-gray: #f7f9fc;
+    --text-color: #333;
+    --border-color: #ddd;
+
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    font-family: var(--font-stack);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    display: flex;
+    padding: 20px;
+    background-color: #b2b866;
+    color: white;
+    margin-bottom: 65px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-left: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 0;
+    margin-top: 8px;
+    margin-left: 540px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #f6f6f6d6;
+    transition: color 0.3;
+    text-decoration: underline;
+}
+
+
+/* ===== Main Content ===== */
+main {
+    padding: 2rem;
+    background-color: var(--light-gray);
+}
+
+/* ===== Section Headings ===== */
+h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Articles ===== */
+article {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+thead {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+/* ===== Lists ===== */
+ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* ===== Details & Summary ===== */
+details {
+    background-color: #fafafa;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #666;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+    /* color: #666; */
+    color: white;
+}
+
+footer p:hover {
+    cursor: pointer;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 0.5rem;
+        background-color: white;
+    }
+
+    td {
+        padding-left: 50%;
+        position: relative;
+        text-align: right;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0.75rem;
+        top: 0.75rem;
+        font-weight: bold;
+        text-align: left;
+    }
+}
