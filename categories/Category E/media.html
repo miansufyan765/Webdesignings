@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Media exercise with audio, video, and image map">
+    <title>TaskTen</title>
+</head>
+
+<body>
+
+    <h1>Media</h1>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video</h2>
+    <video controls width="480">
+        <source src="sample-video.mp4" type="video/mp4">
+        <track src="captions.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video element.
+    </video>
+
+    <h2> Image Map</h2>
+    <img src="sample-image.jpg" alt="Sample Image Map" usemap="#samplemap" width="400">
+    <br>
+    <img src="horse.webp" width="400px">
+
+    <map name="samplemap">
+        <area shape="rect" coords="0,0,200,200" href="https://developer.mozilla.org/" alt="MDN">
+        <area shape="circle" coords="300,150,50" href="https://www.w3schools.com/" alt="W3Schools">
+    </map>
+
+</body>
+
+</html>

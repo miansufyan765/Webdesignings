@@ -1,0 +1,215 @@
+/* ========== Root Variables ========== */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --light-bg: #f9f9f9;
+    --white: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== Base Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ========== Header ========== */
+header {
+    display: flex;
+    padding: 20px;
+    background-color: #b2b866;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-left: 8px;
+}
+
+/* Navigation styles */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 0;
+    margin-top: 8px;
+    margin-left: 540px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: #f6f6f6d6;
+    transition: color 0.3;
+    text-decoration: underline;
+}
+
+
+/* ========== Main Content ========== */
+main {
+    padding: 2rem;
+}
+
+/* Section & Article Styling */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+article {
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    /* border-bottom: 2px solid var(--accent-color); */
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+/* ========== Form Styling ========== */
+form {
+    margin-top: 1rem;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2a80c2;
+}
+
+/* ========== Address Styling ========== */
+address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+address a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Table Styling (Office Hours) ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+td {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+}
+
+/* ========== FAQ (Details Element) ========== */
+details {
+    margin-top: 1rem;
+    background-color: #fafafa;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: #666;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer p:hover {
+    cursor: pointer;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    section {
+        padding: 0 1rem;
+    }
+}
