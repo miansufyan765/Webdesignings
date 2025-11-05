@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timetable with table structure elements">
+    <title>TaskEight</title>
+</head>
+
+<body>
+
+    <h1>Timetable</h1>
+
+    <table>
+        <caption>Class Schedule</caption>
+
+        <colgroup>
+            <col class="first-col">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">9-10 AM</th>
+                <th scope="col">10-11 AM</th>
+                <th scope="col">11-12 PM</th>
+                <th scope="col">12-1 PM</th>
+                <th scope="col">1-2 PM</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>Math</td>
+                <td>Science</td>
+                <td rowspan="2">Computer Lab</td>
+                <td>History</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+                <td>Music</td>
+            </tr>
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td colspan="2">Workshop</td>
+                <td>Art</td>
+                <td>Chemistry</td>
+                <td>Free</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">End of Weekly Timetable</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
